@@ -6,7 +6,7 @@ import tkinter.messagebox
 from tkinter import filedialog
 import pandas as pd
 
-print("git test")
+print("2nd git test")
 #window setting
 window = tk.Tk()
 window.title("外籍醫事人員許可範本套用系統")
