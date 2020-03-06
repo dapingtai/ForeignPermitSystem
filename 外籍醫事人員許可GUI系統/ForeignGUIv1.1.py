@@ -3,7 +3,7 @@
 
 #import library
 import os
-import datetime,time
+import datetime
 import tkinter as tk
 import tkinter.messagebox
 from tkinter import filedialog
@@ -78,7 +78,7 @@ def permit_write():
         write_success_label.pack()
 
         #write access to body
-        body_y+=40
+        body_y+=30
         body_label = tk.Label(window,text="{}{}-{}".format(person_name,get_fname,get_pname[:-4:]))
         body_label.place(x=400,y=body_y)
 
@@ -87,13 +87,14 @@ def permit_write():
 
 #Aboutme def
 def aboutme():
-    about_word="這是一個隨便寫的公文範本圖形介面程式ver1.1\n" \
+    about_word="這是一個隨便寫的公文範本圖形介面程式ver1.1.finally\n" \
                "作者:Rbbb\n" \
                "更新項目:\n" \
                "1.年月日預設\n" \
                "2.增加已完成許可(今天日期)\n" \
-               "3.用爛方法改善PermitButton位置(Tk.place)"
-    tk.messagebox.showinfo(title="關於本程式",message=about_word)
+               "3.用爛方法改善PermitButton位置(Tk.place)\n" \
+               "4.小時鐘和吃飯叮嚀"
+    tk.messagebox.showinfo(title="關於本程式", message=about_word)
 
 #Choose data def
 def choose_data():
@@ -122,6 +123,17 @@ def choose_data():
         work_permitdate_entry.insert("end", keydict[keycolumn[9]])
     except:
         tk.messagebox.showinfo(title="檔案選取類型錯誤",message="目前僅支援讀取Excel\n請使用.xlsx檔案")
+#Clock
+def clock():
+    now_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    lunch_time = datetime.datetime.now().strftime("%H")
+    lunch_warnig = ""
+    if lunch_time=="12":
+        lunch_warnig = "-中午拉快去吃飯"
+    else:
+        lunch_warnig = ""
+    time_text["text"] = "{}\n完成許可{}".format(now_time, lunch_warnig)
+    window.after(1000,clock)
 
 ##################GUI Body#####################
 if __name__=='__main__':
@@ -231,19 +243,19 @@ if __name__=='__main__':
     format_choice_button = tk.Button(format_button_frame,text="確認",command=get_format_name,width=10,height=1)
     format_choice_button.pack(side=tk.LEFT)
 
-#enpty one
-    enpty_frame = tk.Frame(window)
-    enpty_frame.pack(anchor="nw",side=tk.TOP)
-    enpty_label = tk.Label(enpty_frame,text="",height=2).pack(side=tk.LEFT)
+#empty one
+    empty_frame = tk.Frame(window)
+    empty_frame.pack(anchor="nw",side=tk.TOP)
+    empty_label = tk.Label(empty_frame,text="",height=2).pack(side=tk.LEFT)
 
 # Write Permit Button
     permit_write_button = tk.Button(bottom_frame,text="產生許可公文", command=permit_write)
     permit_write_button.pack()
 
 # Date Time
-    now_time = datetime.datetime.now().strftime("%Y-%m-%d")
-    time_text = tk.Label(window,text="{}.已完成許可:".format(now_time)).place(x=400, y=body_y)
-
+    time_text = tk.Label(window)
+    time_text.place(x=400, y=body_y)
+    clock()
 
 # Finish Permit
     window.mainloop()
