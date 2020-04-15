@@ -1,4 +1,4 @@
-# ForeignPermitOfficialdocumentSystem
+# ForeignPermitSystem
 Foreign Permit Officialdocument System by Python Tkinter
 
 # Download
