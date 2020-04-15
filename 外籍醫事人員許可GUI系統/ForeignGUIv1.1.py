@@ -78,7 +78,7 @@ def permit_write():
         write_success_label.pack()
 
         #write access to body
-        body_y+=30
+        body_y+=35
         body_label = tk.Label(window,text="{}{}-{}".format(person_name,get_fname,get_pname[:-4:]))
         body_label.place(x=400,y=body_y)
 
@@ -126,13 +126,15 @@ def choose_data():
 #Clock
 def clock():
     now_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    lunch_time = datetime.datetime.now().strftime("%H")
-    lunch_warnig = ""
-    if lunch_time=="12":
-        lunch_warnig = "-中午拉快去吃飯"
+    warning_time = datetime.datetime.now().strftime("%H")
+    twarnig = ""
+    if warning_time=="12":
+        twarnig = "-中午拉快去吃飯"
+    elif warning_time=="17":
+        twarnig = "-準備下班囉~"
     else:
         lunch_warnig = ""
-    time_text["text"] = "{}\n完成許可{}".format(now_time, lunch_warnig)
+    time_text["text"] = "{}\n完成許可{}".format(now_time, twarnig)
     window.after(1000,clock)
 
 ##################GUI Body#####################
