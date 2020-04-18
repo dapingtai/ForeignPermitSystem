@@ -32,9 +32,9 @@ Datetime
 pip install datetime
 ```
 # Instructions
-![image](外籍醫事人員許可GUI系統/Instructions/img/FPS2.jpg)
-![image](外籍醫事人員許可GUI系統/Instructions/img/FPS3.jpg)
-![image](外籍醫事人員許可GUI系統/Instructions/img/FPS4.jpg)
-![image](外籍醫事人員許可GUI系統/Instructions/img/FPS5.jpg)
-![image](外籍醫事人員許可GUI系統/Instructions/img/FPS6.jpg)
-![image](外籍醫事人員許可GUI系統/Instructions/img/FPS7.jpg)
+![image](外籍醫事人員許可GUI系統/Instructions/img/FPS2.png)
+![image](外籍醫事人員許可GUI系統/Instructions/img/FPS3.png)
+![image](外籍醫事人員許可GUI系統/Instructions/img/FPS4.png)
+![image](外籍醫事人員許可GUI系統/Instructions/img/FPS5.png)
+![image](外籍醫事人員許可GUI系統/Instructions/img/FPS6.png)
+![image](外籍醫事人員許可GUI系統/Instructions/img/FPS7.png)
