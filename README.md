@@ -6,7 +6,8 @@ Producing Foreign Permit Officialdocument by Python Tkinter GUI system
 ```
 git clone https://github.com/dapingtai/ForeignPermitSystem.git
 ```
-# 
+# Flowchart
+![image](外籍醫事人員許可GUI系統/Instructions/img/How to create GUI system by tkinter.png)
 
 # Materials(Packages)
 Pipenv-https://pypi.org/project/pipenv/
