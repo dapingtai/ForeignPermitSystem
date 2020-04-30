@@ -1,4 +1,4 @@
-[![Latest PyPI version](https://img.shields.io/pypi/v/magic-impute.svg)](https://pypi.org/project/magic-impute/)
+![GitHub repo size](https://img.shields.io/github/repo-size/dapingtai/ForeignPermitSystem?style=plastic)
 # ForeignPermitSystem
 Producing Foreign Permit Officialdocument by Python Tkinter GUI system
 # Overview
