@@ -1,5 +1,5 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/dapingtai/ForeignPermitSystem?style=plastic)
-![PyPI](https://img.shields.io/pypi/v/pyinstaller)(https://pypi.org/project/PyInstaller/)
+[![PyPI](https://img.shields.io/pypi/v/pyinstaller)](https://pypi.org/project/PyInstaller/)
 ![GitHub last commit](https://img.shields.io/github/last-commit/dapingtai/ForeignPermitSystem)
 # ForeignPermitSystem
 Producing Foreign Permit Officialdocument by Python Tkinter GUI system
