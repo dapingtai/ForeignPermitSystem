@@ -1,6 +1,7 @@
+![image](https://img.shields.io/badge/exe-v1.1-orange?style=plastic)
 ![GitHub repo size](https://img.shields.io/github/repo-size/dapingtai/ForeignPermitSystem?style=plastic)
-[![PyPI](https://img.shields.io/pypi/v/pyinstaller)](https://pypi.org/project/PyInstaller/)
-![GitHub last commit](https://img.shields.io/github/last-commit/dapingtai/ForeignPermitSystem)
+[![PyPI](https://img.shields.io/pypi/v/pyinstaller?style=plastic)](https://pypi.org/project/PyInstaller/)
+![GitHub last commit](https://img.shields.io/github/last-commit/dapingtai/ForeignPermitSystem?style=plastic)
 # ForeignPermitSystem
 Producing Foreign Permit Officialdocument by Python Tkinter GUI system
 # Overview
